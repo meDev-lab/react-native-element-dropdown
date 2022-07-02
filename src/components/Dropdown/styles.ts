@@ -62,7 +62,6 @@ export const styles = StyleSheet.create({
   textError: {
     position: 'absolute',
     top: 35,
-    left: -5,
     color: 'red',
     fontSize: 13,
   },
