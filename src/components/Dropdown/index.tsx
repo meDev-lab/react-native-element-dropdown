@@ -42,6 +42,7 @@ const DropdownComponent = React.forwardRef<any, DropdownProps>(
   (props, currentRef) => {
     const orientation = useDeviceOrientation();
     const {
+      errorMessage,
       testID,
       itemTestIDField,
       onChange,
@@ -315,6 +316,7 @@ const DropdownComponent = React.forwardRef<any, DropdownProps>(
                 ? _.get(currentValue, labelField)
                 : placeholder}
             </Text>
+            {errorMessage ? <Text style={styles.textError}>{errorMessage}</Text> : false}
             {renderRightIcon ? (
               renderRightIcon()
             ) : (
