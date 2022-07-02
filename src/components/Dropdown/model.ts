@@ -12,6 +12,7 @@ export type IDropdownRef = {
 };
 
 export type DropdownProps = {
+  errorMessage?: string;
   testID?: string;
   itemTestIDField?: string;
   style?: StyleProp<ViewStyle>;
