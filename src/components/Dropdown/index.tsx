@@ -316,7 +316,7 @@ const DropdownComponent = React.forwardRef<any, DropdownProps>(
                 ? _.get(currentValue, labelField)
                 : placeholder}
             </Text>
-            {errorMessage ? <Text style={styles.textError}>{errorMessage}</Text> : false}
+            {errorMessage && <Text style={styles.textError}>{errorMessage}</Text>}
             {renderRightIcon ? (
               renderRightIcon()
             ) : (
