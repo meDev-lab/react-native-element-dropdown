@@ -51,11 +51,6 @@ export const styles = StyleSheet.create({
     width: 20,
     height: 20,
   },
-  textError: {
-    color: 'red',
-    fontSize: 14,
-    marginTop: 10,
-  },
   input: {
     borderWidth: 0.5,
     borderColor: '#DDDDDD',
@@ -63,5 +58,12 @@ export const styles = StyleSheet.create({
     marginBottom: 8,
     margin: 6,
     height: 45,
+  },
+  textError: {
+    position: 'absolute',
+    top: 35,
+    left: -5,
+    color: 'red',
+    fontSize: 13,
   },
 });
